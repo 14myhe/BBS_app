@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+    <ImageView
+        android:id="@+id/shopimg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/shoe"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="宝贝："
+        android:id="@+id/textView"
+        android:textColor="#f56606"
+        android:layout_alignTop="@+id/show_title"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+    <TextView
+        android:id="@+id/show_title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#f56606"
+        android:gravity="center"
+        android:text="篮球鞋"
+        android:layout_alignTop="@+id/shopimg"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格："
+        android:textColor="#f56606"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/textView9"
+        android:layout_toLeftOf="@+id/shopprice"
+        android:layout_toStartOf="@+id/shopprice" />
+    <TextView
+        android:id="@+id/shopprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50.0"
+        android:textColor="#f56606"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/show_title"
+        android:layout_alignStart="@+id/show_title" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="一戳看帖>>"
+        android:id="@+id/textView9"
+        android:layout_alignBottom="@+id/shopimg"
+        android:layout_alignRight="@+id/delete_card"
+        android:layout_alignEnd="@+id/delete_card" />
+    <TextView
+        android:id="@+id/add_shop_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016-12-08 18：29"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toLeftOf="@+id/textView5"
+        android:layout_toStartOf="@+id/textView5" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发布"
+        android:id="@+id/textView5"
+        android:layout_above="@+id/show_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/delete_card"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="收藏"
+        android:textSize="10dp"
+        android:textColor="#f56606"
+        android:background="@mipmap/collection"
+        android:layout_below="@+id/add_shop_time"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5" />
+
+
+</RelativeLayout>

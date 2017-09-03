@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="免费注册"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                />
+            <EditText
+                android:id="@+id/account"
+                android:layout_height="wrap_content"
+                android:hint="请用学号进行注册"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="密码"
+                />
+            <EditText
+                android:id="@+id/password"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码(6-8位)"
+                android:inputType="textPassword"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="昵称"
+                />
+            <EditText
+                android:id="@+id/username"
+                android:layout_height="wrap_content"
+                android:hint="请输入昵称(2-12位)"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="性别"/>
+            <RadioGroup
+                android:id="@+id/gender"
+                android:orientation="horizontal"
+                android:layout_gravity="left"
+                android:weightSum="1">
+
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:checked="true"
+                android:layout_weight="0.98" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女"/>
+
+            </RadioGroup>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:layout_span="2"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/register_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="提交"
+                android:textColor="#fff"
+                android:layout_span="2"
+                android:background="@mipmap/button"/>
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,1 @@
+CREATE TABLE message(id VARCHAR(10),senderid INT(10),recceicerid INT(10),content VARCHAR(100),TIME TIMESTAMP,readmessage ENUM('yes','no'));

@@ -1,0 +1,18 @@
+
+<resources>
+    <string name="app_name">汕大BBS</string>
+    <string name="search">搜索</string>
+    <string name="message">消息</string>
+    <string name="home">主页</string>
+    <string name="collection">收藏夹</string>
+    <string name="setting">设置</string>
+    <string name="goods">商品分类：</string>
+    <string-array name="goods_type">
+        <item>书籍</item>
+        <item>电子产品</item>
+        <item>家用电器</item>
+        <item>交通工具</item>
+        <item>其他</item>
+    </string-array>
+
+</resources>

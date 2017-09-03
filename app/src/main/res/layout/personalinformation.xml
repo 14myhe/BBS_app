@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.administrator.never.MainActivity"
+   >
+
+    <TextView
+        android:text="我的头像"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView25"
+        android:textSize="10dip"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_alignEnd="@+id/imageView3" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="250dip"
+        android:layout_below="@+id/textView25"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="63dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <Button
+            
+            android:id="@+id/button9"
+            android:visibility="visible"
+            android:text="修改用户名"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@android:style/Widget.Button.Small"
+            android:textSize="20dip" />
+
+        <Button
+            android:text="发帖"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button12"
+            style="@android:style/Widget.Button.Small"
+            android:visibility="visible"
+            android:textSize="20dip"
+             />
+
+        <Button
+            android:text="修改密码"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button11"
+            android:visibility="visible"
+            style="@android:style/Widget.Button.Small"
+            android:textSize="20dip" />
+
+        <Button
+            android:text="管理我的帖子"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button15"
+            style="@android:style/Widget.Button.Small"
+            android:textSize="20dip" />
+        <Button
+            android:id="@+id/user_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注销账号"
+            style="@android:style/Widget.Button.Small"
+            android:textSize="20dip"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="我的账号"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:id="@+id/textView3"
+        android:textSize="20dip"
+        android:textColor="#fff"
+        android:background="#f56606"
+        android:layout_weight="0.01" />
+
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginTop="42dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:shrinkColumns="3"
+    android:id="@+id/login_table"
+    android:padding="6.5dip"
+    android:paddingTop="100dp"
+    android:background="@mipmap/login_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow>
+            <TextView
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:text="账号" />
+            <EditText
+                android:id="@+id/account"
+                android:layout_height="wrap_content"
+                android:hint="请输入账号名"/>
+        </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            />
+        <EditText
+            android:id="@+id/password"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:layout_column="1" />
+    </TableRow>
+
+       <TableRow>
+           <TextView
+               android:layout_height="wrap_content"
+               android:text=" "
+               android:layout_span="2"/>
+       </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/submit"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_span="2"
+                android:textColor="#fff"
+                android:background="@mipmap/button"
+                android:text="登录"/>
+        </TableRow>
+    <TableRow>
+       <TextView
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:layout_span="2"/>
+    </TableRow>
+     <TableRow>
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
+            android:layout_width="135dp"
+            android:background="@mipmap/register_button"
+            android:text="免费注册"
+            android:layout_span="2"
+            android:textColor="#f96502"/>
+     </TableRow>
+</TableLayout>
+
+

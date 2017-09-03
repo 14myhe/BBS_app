@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:weightSum="1">
+
+    <TextView
+        android:text="发送消息"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:id="@+id/textView7"
+        android:textSize="20dip"
+        android:textColor="#fff"
+        android:background="#f56606"
+        android:layout_weight="0.01" />
+
+    <TextView
+        android:text="接收者ID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:textSize="20dip"
+         />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:hint="@android:string/unknownName"
+        android:textSize="20dip"
+        android:layout_weight="0.01" />
+
+    <TextView
+        android:text="发送内容："
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textSize="20dip"/>
+    
+    
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:minLines="8"
+        android:maxLines="10"
+        android:scrollbars="vertical" 
+        android:hint="@android:string/unknownName"
+        android:textSize="20dip"
+        android:layout_weight="0.04"
+    >
+    </EditText>
+
+    <Button
+        android:layout_width="394dp"
+        android:layout_height="40dip"
+        android:id="@+id/button"
+        android:layout_weight="0.00"
+        android:layout_marginLeft="20dip"
+        style="@android:style/Widget.Button.Small"
+        android:text="发送"
+        android:textSize="20dip" />
+    
+     <Button
+        android:layout_width="394dp"
+        android:layout_height="40dip"
+        android:id="@+id/button_exit"
+        android:layout_weight="0.00"
+        android:layout_marginLeft="20dip"
+        style="@android:style/Widget.Button.Small"
+        android:text="退出"
+        android:textSize="20dip" />
+
+</LinearLayout>

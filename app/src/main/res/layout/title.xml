@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f56606">
+    <TextView
+        android:id="@+id/bbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="汕大BBS"
+        android:textColor="#fff"
+        android:textSize="20dp"/>
+
+    <include layout="@layout/search_layout"
+        android:id="@+id/searchtext"
+        android:layout_height="40dp"
+        android:layout_width="200dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="消息"
+        android:textColor="#fff"/>
+    <Button
+        android:id="@+id/message"
+        android:layout_margin="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/message"/>
+    <Button
+        android:id="@+id/refresh"
+        android:layout_margin="5dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@mipmap/refresh"/>
+
+
+</LinearLayout>
